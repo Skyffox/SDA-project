@@ -1,3 +1,5 @@
+Scientific Data Analysis project:
+
 The following packages are required to fully run the Jupyter Notebook:
 
 conda install -c conda-forge ffmpeg
@@ -25,6 +27,5 @@ pip install --user https://github.com/matplotlib/basemap/archive/master.zip
 
 If these also do not work, we have included the figures in the /figures map. The gif of attacks over 
 the years has also been included. But this video (when downloaded) seemed to not show the entire process which is due to a fault of the library. 
-
 
 Contributors: Julius Wagt, Hendrik Huang, Martijn Messanella
