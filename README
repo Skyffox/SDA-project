@@ -1,0 +1,30 @@
+The following packages are required to fully run the Jupyter Notebook:
+
+conda install -c conda-forge ffmpeg
+
+This package is used to run the gif in the notebook.
+
+conda install -c conda-forge basemap
+
+This package is used to draw a map of the world and translate our latitude and longitude 
+values to coordinates used by this library to accurately represent them on the worldmap.
+
+We have had several issues when trying to use the basemap libary. We had installed the Basemap 
+package in our root virtual environment. But apparently the Basemap package relies on the proj.4 env 
+variable to be set. Which does not work if you are working in a root environment. So we implemented 
+a dirty fix to set the missing variable. This fix is implemented in the notebook. If this fix does 
+not work when reviewing the code, you may have to try the following installers:
+
+conda install -c anaconda basemap 
+
+or
+
+sudo apt-get install libgeos-3.X.X
+sudo apt-get install libgeos-dev
+pip install --user https://github.com/matplotlib/basemap/archive/master.zip
+
+If these also do not work, we have included the figures in the /figures map. The gif of attacks over 
+the years has also been included. But this video (when downloaded) seemed to not show the entire process which is due to a fault of the library. 
+
+
+Contributors: Julius Wagt, Hendrik Huang, Martijn Messanella
